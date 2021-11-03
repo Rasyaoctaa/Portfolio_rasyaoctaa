@@ -1,0 +1,261 @@
+*{
+	font-family: 'Ubuntu', sans-serif; 
+	padding: 0;
+	margin: 0;
+}
+header{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	background:#4682b4; 
+}
+header ul{
+	float: right;
+}
+header ul li{
+	display: inline-block;
+	padding: 20px;
+	padding-top: 30px;
+}
+header ul li a:hover{
+	color: #fffafa;
+	transition: .1s;
+}
+header h1{
+	padding-left: 15px;
+	display: inline-block;
+	float: left;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+header h1 a:hover {
+	color: #fffafa;
+	transition: .2s;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+.container::after {
+content: '';
+display: block;
+clear: both;
+}
+.menu-sidebar{
+	float: right;
+	display: none;
+	padding: 15px;
+}
+.menu-sidebar:hover{
+	cursor: pointer;
+}
+@media (max-width: 768px){
+ .menu-sidebar{
+ 	display: block;
+ }
+header ul{
+display: none;
+}
+.col-4{
+	width: 50%;
+}
+.col-3{
+	width: 100%;
+}
+}
+#bar{
+	display: none;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width: 200px;
+	background-color: rgba(120, 138, 125, .8);
+	transition: .2s;
+	z-index: 9999;
+}
+.sidebar ul li{
+padding: 25px;
+}
+.sidebar ul li a{
+	color: white;
+}
+.sidebar ul li:hover{
+	background-color:#fffafa;
+}
+#bar:checked ~ .sidebar{
+	left: 0;
+}
+/*bagian benner*/
+.banner {
+	background: linear-gradient(to top,#4682b4 0%, #fffafa);	
+	padding: 150px 0;
+}
+.banner img{
+	width: 150px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.b-center {
+	text-align: center;
+}
+.banner h2 {
+	margin-bottom: 10px;
+}
+
+.banner p {
+	font-size: 10px;
+}
+.banner h2, .banner p, .banner span {
+	color: black;
+}
+section {
+	padding:50px 0;
+}
+section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin:20px;
+	position: relative;
+}
+section h3::before {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:120px;
+	height:1px;
+	background-color: #ddd;
+	left: calc(50% - 60px);
+}
+section h3::after {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width:40px;
+	height:4px;
+	background-color: #4682b4;
+	left: calc(50% - 20px);
+}
+/*bagian about*/
+#about p{
+	text-align: center;
+	text-indent: 30px;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+/*bagian skills*/
+#skills{
+	background-color : #4682b4;
+}
+#skills .l-skill{
+	height: 30px;
+	background-color: yellow;
+	border: 1px solid #ddd;
+	margin: 5px 0 20px 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.l-skill{
+	border-radius: 40px;
+}
+.l-skill .nilai{
+	height: 30px;
+	background-color: white;
+	display: inline-block;
+	color: #4682b4;
+	text-align: center;
+	width: 10%;
+	transition: width 2s;
+	border-radius: 40px;
+}
+
+.Bs:hover{
+	width: 80%;
+}
+
+.Ps:hover{
+	width: 90%;
+}
+
+.Kom:hover{
+	width: 75%;
+}
+
+.Bi:hover{
+	width: 85%;s
+}
+
+/*bagian portfolio*/
+.col-4{
+	width: 25%;
+	box-sizing: border-box;
+	padding: 5px;
+	float: left;
+	text-align: center;
+	margin-bottom: 15px;
+
+}
+.col-4 img {
+	width: 100%;
+	height : 200px;
+	object-fit: cover;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col-4 a:hover img{
+	transform: scale(1.2);
+	transition: ls;
+}
+
+/*bagian contact*/
+#contact {
+	background-color: #4682b4 ;
+
+}
+
+.col-3{
+	width: 33.33%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding: 50px 10px;
+}
+
+.col-3 h4{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+}
+
+/*bagian footer*/
+footer {
+	background-color: #333;
+	padding: 50px;
+	text-align: center;
+}
+footer small{
+	color: #fff;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
